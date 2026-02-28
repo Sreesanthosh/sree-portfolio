@@ -14,7 +14,7 @@ export default function Portfolio() {
           transition={{ duration: 0.8 }}
           className="text-5xl md:text-6xl font-bold mb-6"
         >
-          Hi, I'm Sri 👋
+          Hi, I'm Sree 👋
         </motion.h1>
 
         <motion.p
@@ -39,28 +39,38 @@ export default function Portfolio() {
       <section className="py-20 px-6 text-center bg-black/30 backdrop-blur-lg">
         <h2 className="text-3xl font-bold mb-6">About Me</h2>
         <p className="max-w-2xl mx-auto text-gray-300 leading-relaxed">
-          I specialize in user-centered design, wireframing, and prototyping.
-          I build intuitive interfaces using Figma and modern design systems.
+          I specialize in user-centered design, wireframing, prototyping and creating intuitive digital products.
+          I focus on usability, clarity and impactful visual experiences.
         </p>
       </section>
 
       {/* Projects Section */}
       <section id="projects" className="py-20 px-6 text-center">
-        <h2 className="text-3xl font-bold mb-10">Projects</h2>
+        <h2 className="text-3xl font-bold mb-12">Projects</h2>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          
-          <div className="bg-white/10 p-6 rounded-2xl backdrop-blur-md hover:scale-105 transition">
-            <h3 className="text-xl font-semibold mb-2">E-Commerce UI</h3>
-            <p className="text-gray-300">
-              Designed a modern shopping experience with clean layouts and intuitive navigation.
+        <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+
+          {/* E-commerce Project */}
+          <div className="bg-white/5 p-6 rounded-3xl backdrop-blur-lg hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/30 transition duration-500">
+            <img 
+              src="/projects/ecommerce-web.png"
+              className="rounded-xl mb-6 w-full"
+            />
+            <h3 className="text-2xl font-semibold mb-3">E-Commerce Web Design</h3>
+            <p className="text-gray-400">
+              Designed a modern shopping experience focused on usability, clean layout and improved user flow.
             </p>
           </div>
 
-          <div className="bg-white/10 p-6 rounded-2xl backdrop-blur-md hover:scale-105 transition">
-            <h3 className="text-xl font-semibold mb-2">Fitness App UI</h3>
-            <p className="text-gray-300">
-              Created a fitness tracking interface with engaging visuals and smooth interactions.
+          {/* Fitness Project */}
+          <div className="bg-white/5 p-6 rounded-3xl backdrop-blur-lg hover:scale-105 hover:shadow-2xl hover:shadow-purple-500/30 transition duration-500">
+            <img 
+              src="/projects/fitness-tracker.png"
+              className="rounded-xl mb-6 w-full"
+            />
+            <h3 className="text-2xl font-semibold mb-3">Fitness Tracker App</h3>
+            <p className="text-gray-400">
+              Created an engaging fitness dashboard with intuitive tracking, clear data visualization and motivating UI.
             </p>
           </div>
 
